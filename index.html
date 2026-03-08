@@ -7,19 +7,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #f5f0e8;
-    --bg2: #ede8de;
-    --ink: #1a1410;
-    --ink2: #4a3f35;
-    --ink3: #8a7f75;
-    --line: #d4cfc5;
-    --red: #c0392b;
-    --blue: #1a4a7a;
-    --green: #1e6b3a;
-    --gold: #b5860d;
-    --purple: #5b2d8e;
-    --teal: #1a6b6b;
-    --orange: #c05c10;
+    --bg: #eef4fb;
+    --bg2: #e2edf7;
+    --ink: #2d3748;
+    --ink2: #4a5568;
+    --ink3: #8a9bb0;
+    --line: #c8d9ee;
+    --red: #e07b8a;
+    --blue: #6b9fd4;
+    --green: #6dbb8a;
+    --gold: #c9a96e;
+    --purple: #a888c9;
+    --teal: #6bbfbf;
+    --orange: #e09a6b;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -33,11 +33,12 @@
 
   /* HERO */
   .hero {
-    background: var(--ink);
-    color: var(--bg);
+    background: linear-gradient(135deg, #d4e9f7 0%, #e8d9f0 50%, #d9eed9 100%);
+    color: var(--ink);
     padding: 80px 40px 60px;
     position: relative;
     overflow: hidden;
+    border-bottom: 2px solid #c8d9ee;
   }
   .hero::before {
     content: '';
@@ -47,8 +48,8 @@
       45deg,
       transparent,
       transparent 40px,
-      rgba(255,255,255,0.02) 40px,
-      rgba(255,255,255,0.02) 41px
+      rgba(255,255,255,0.15) 40px,
+      rgba(255,255,255,0.15) 41px
     );
   }
   .hero-inner { max-width: 900px; margin: 0 auto; position: relative; }
@@ -56,7 +57,7 @@
     font-size: 11px;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: #a888c9;
     margin-bottom: 16px;
     font-weight: 600;
   }
@@ -66,12 +67,12 @@
     font-weight: 900;
     line-height: 1.05;
     margin-bottom: 20px;
-    color: #f5f0e8;
+    color: #2d3748;
   }
-  .hero h1 span { color: var(--gold); }
+  .hero h1 span { color: #a888c9; }
   .hero-sub {
     font-size: 17px;
-    color: #b0a898;
+    color: #5a7a9a;
     max-width: 560px;
     font-weight: 300;
   }
@@ -85,14 +86,15 @@
     font-family: 'Playfair Display', serif;
     font-size: 32px;
     font-weight: 700;
-    color: var(--gold);
+    color: #6b9fd4;
   }
-  .hero-stat-label { font-size: 12px; color: #8a7f75; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+  .hero-stat-label { font-size: 12px; color: #7a9ab0; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
 
   /* NAV */
   .section-nav {
-    background: var(--ink);
-    border-top: 1px solid #2a2420;
+    background: white;
+    border-top: 1px solid #c8d9ee;
+    border-bottom: 1px solid #c8d9ee;
     padding: 0 40px;
     display: flex;
     gap: 0;
@@ -102,7 +104,7 @@
   .nav-btn {
     background: none;
     border: none;
-    color: #8a7f75;
+    color: #8a9bb0;
     font-family: 'Source Sans 3', sans-serif;
     font-size: 12px;
     font-weight: 600;
@@ -114,8 +116,8 @@
     border-bottom: 2px solid transparent;
     transition: all 0.2s;
   }
-  .nav-btn:hover { color: var(--bg); }
-  .nav-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+  .nav-btn:hover { color: #6b9fd4; }
+  .nav-btn.active { color: #a888c9; border-bottom-color: #a888c9; }
 
   /* SECTIONS */
   .section { display: none; }
@@ -446,38 +448,38 @@
     <div class="chain-wrap">
       <div class="chain">
         <div class="chain-node">
-          <div class="chain-circle" style="background:#e8f5e9;border-color:#1e6b3a;color:#1e6b3a;">🔬</div>
-          <div class="chain-label" style="color:#1e6b3a;">R&D</div>
+          <div class="chain-circle" style="background:#dcf0e5;border-color:#6dbb8a;color:#6dbb8a;">🔬</div>
+          <div class="chain-label" style="color:#6dbb8a;">R&D</div>
           <div class="chain-sub">10–15 years</div>
         </div>
         <div class="chain-arrow">→</div>
         <div class="chain-node">
-          <div class="chain-circle" style="background:#fff3e0;border-color:#b5860d;color:#b5860d;">⚖️</div>
-          <div class="chain-label" style="color:#b5860d;">FDA Review</div>
+          <div class="chain-circle" style="background:#fdf0dc;border-color:#c9a96e;color:#c9a96e;">⚖️</div>
+          <div class="chain-label" style="color:#c9a96e;">FDA Review</div>
           <div class="chain-sub">1–3 years</div>
         </div>
         <div class="chain-arrow">→</div>
         <div class="chain-node">
-          <div class="chain-circle" style="background:#e8f5e9;border-color:#1e6b3a;color:#1e6b3a;">🏭</div>
-          <div class="chain-label" style="color:#1e6b3a;">Manufacturer</div>
+          <div class="chain-circle" style="background:#dcf0e5;border-color:#6dbb8a;color:#6dbb8a;">🏭</div>
+          <div class="chain-label" style="color:#6dbb8a;">Manufacturer</div>
           <div class="chain-sub">Produces drug</div>
         </div>
         <div class="chain-arrow">→</div>
         <div class="chain-node">
-          <div class="chain-circle" style="background:#e3f2fd;border-color:#1a4a7a;color:#1a4a7a;">🚚</div>
-          <div class="chain-label" style="color:#1a4a7a;">Wholesaler</div>
+          <div class="chain-circle" style="background:#dceef9;border-color:#6b9fd4;color:#6b9fd4;">🚚</div>
+          <div class="chain-label" style="color:#6b9fd4;">Wholesaler</div>
           <div class="chain-sub">Distributes</div>
         </div>
         <div class="chain-arrow">→</div>
         <div class="chain-node">
-          <div class="chain-circle" style="background:#fff3e0;border-color:#c05c10;color:#c05c10;">💊</div>
-          <div class="chain-label" style="color:#c05c10;">Pharmacy</div>
+          <div class="chain-circle" style="background:#fdf0dc;border-color:#e09a6b;color:#e09a6b;">💊</div>
+          <div class="chain-label" style="color:#e09a6b;">Pharmacy</div>
           <div class="chain-sub">Dispenses</div>
         </div>
         <div class="chain-arrow">→</div>
         <div class="chain-node">
-          <div class="chain-circle" style="background:#fce4ec;border-color:#c0392b;color:#c0392b;">🧑‍⚕️</div>
-          <div class="chain-label" style="color:#c0392b;">Patient</div>
+          <div class="chain-circle" style="background:#fce8ed;border-color:#e07b8a;color:#e07b8a;">🧑‍⚕️</div>
+          <div class="chain-label" style="color:#e07b8a;">Patient</div>
           <div class="chain-sub">Receives drug</div>
         </div>
       </div>
@@ -488,41 +490,41 @@
     <p class="section-sub">Depending on the drug type, insurance status, and care setting, the journey from prescription to patient takes very different routes.</p>
 
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:40px;">
-      <div style="background:white;border:1px solid var(--line);border-left:4px solid #1a4a7a;border-radius:4px;padding:20px;">
+      <div style="background:white;border:1px solid var(--line);border-left:4px solid #6b9fd4;border-radius:4px;padding:20px;">
         <div style="font-size:22px;margin-bottom:8px;">🏪</div>
-        <div style="font-weight:700;font-size:15px;color:#1a4a7a;margin-bottom:6px;">Standard Retail</div>
+        <div style="font-weight:700;font-size:15px;color:#6b9fd4;margin-bottom:6px;">Standard Retail</div>
         <div style="font-size:13px;color:var(--ink2);">The most common path. Patient picks up drug at a local pharmacy. Insurance adjudicated through PBM in real time.</div>
-        <div style="margin-top:10px;"><span class="tag" style="background:#e3f2fd;color:#1a4a7a;">Most Common</span></div>
+        <div style="margin-top:10px;"><span class="tag" style="background:#dceef9;color:#6b9fd4;">Most Common</span></div>
       </div>
-      <div style="background:white;border:1px solid var(--line);border-left:4px solid #c0392b;border-radius:4px;padding:20px;">
+      <div style="background:white;border:1px solid var(--line);border-left:4px solid #e07b8a;border-radius:4px;padding:20px;">
         <div style="font-size:22px;margin-bottom:8px;">📋</div>
-        <div style="font-weight:700;font-size:15px;color:#c0392b;margin-bottom:6px;">Prior Authorization</div>
+        <div style="font-weight:700;font-size:15px;color:#e07b8a;margin-bottom:6px;">Prior Authorization</div>
         <div style="font-size:13px;color:var(--ink2);">Insurer requires approval before covering certain drugs. Can delay access by days or weeks.</div>
-        <div style="margin-top:10px;"><span class="tag" style="background:#fce4ec;color:#c0392b;">Often Delayed</span></div>
+        <div style="margin-top:10px;"><span class="tag" style="background:#fce8ed;color:#e07b8a;">Often Delayed</span></div>
       </div>
-      <div style="background:white;border:1px solid var(--line);border-left:4px solid #5b2d8e;border-radius:4px;padding:20px;">
+      <div style="background:white;border:1px solid var(--line);border-left:4px solid #a888c9;border-radius:4px;padding:20px;">
         <div style="font-size:22px;margin-bottom:8px;">📬</div>
-        <div style="font-weight:700;font-size:15px;color:#5b2d8e;margin-bottom:6px;">Mail-Order Pharmacy</div>
+        <div style="font-weight:700;font-size:15px;color:#a888c9;margin-bottom:6px;">Mail-Order Pharmacy</div>
         <div style="font-size:13px;color:var(--ink2);">90-day supplies shipped to the patient's home. Often cheaper. Used for maintenance medications.</div>
-        <div style="margin-top:10px;"><span class="tag" style="background:#f3e5f5;color:#5b2d8e;">Chronic Conditions</span></div>
+        <div style="margin-top:10px;"><span class="tag" style="background:#f0e8f8;color:#a888c9;">Chronic Conditions</span></div>
       </div>
-      <div style="background:white;border:1px solid var(--line);border-left:4px solid #1a6b6b;border-radius:4px;padding:20px;">
+      <div style="background:white;border:1px solid var(--line);border-left:4px solid #6bbfbf;border-radius:4px;padding:20px;">
         <div style="font-size:22px;margin-bottom:8px;">🧬</div>
-        <div style="font-weight:700;font-size:15px;color:#1a6b6b;margin-bottom:6px;">Specialty Drug</div>
+        <div style="font-weight:700;font-size:15px;color:#6bbfbf;margin-bottom:6px;">Specialty Drug</div>
         <div style="font-size:13px;color:var(--ink2);">High-cost biologics and complex drugs requiring special handling, storage, and patient monitoring.</div>
-        <div style="margin-top:10px;"><span class="tag" style="background:#e0f2f1;color:#1a6b6b;">High Cost</span></div>
+        <div style="margin-top:10px;"><span class="tag" style="background:#ddf2f2;color:#6bbfbf;">High Cost</span></div>
       </div>
-      <div style="background:white;border:1px solid var(--line);border-left:4px solid #1e6b3a;border-radius:4px;padding:20px;">
+      <div style="background:white;border:1px solid var(--line);border-left:4px solid #6dbb8a;border-radius:4px;padding:20px;">
         <div style="font-size:22px;margin-bottom:8px;">🏥</div>
-        <div style="font-weight:700;font-size:15px;color:#1e6b3a;margin-bottom:6px;">Inpatient Hospital</div>
+        <div style="font-weight:700;font-size:15px;color:#6dbb8a;margin-bottom:6px;">Inpatient Hospital</div>
         <div style="font-size:13px;color:var(--ink2);">Drugs ordered and administered inside the hospital. Billed as part of the overall procedure cost.</div>
-        <div style="margin-top:10px;"><span class="tag" style="background:#e8f5e9;color:#1e6b3a;">In-Hospital</span></div>
+        <div style="margin-top:10px;"><span class="tag" style="background:#dcf0e5;color:#6dbb8a;">In-Hospital</span></div>
       </div>
-      <div style="background:white;border:1px solid var(--line);border-left:4px solid #b5860d;border-radius:4px;padding:20px;">
+      <div style="background:white;border:1px solid var(--line);border-left:4px solid #c9a96e;border-radius:4px;padding:20px;">
         <div style="font-size:22px;margin-bottom:8px;">💵</div>
-        <div style="font-weight:700;font-size:15px;color:#b5860d;margin-bottom:6px;">Cash-Pay / Uninsured</div>
+        <div style="font-weight:700;font-size:15px;color:#c9a96e;margin-bottom:6px;">Cash-Pay / Uninsured</div>
         <div style="font-size:13px;color:var(--ink2);">No insurance involved. Patient pays out-of-pocket, uses discount cards, or applies for manufacturer assistance.</div>
-        <div style="margin-top:10px;"><span class="tag" style="background:#fff8e1;color:#b5860d;">No Insurance</span></div>
+        <div style="margin-top:10px;"><span class="tag" style="background:#fdf5e0;color:#c9a96e;">No Insurance</span></div>
       </div>
     </div>
 
@@ -538,82 +540,82 @@
 
     <div class="stakeholder-grid">
 
-      <div class="stakeholder-card" style="border-left-color:#c0392b;">
+      <div class="stakeholder-card" style="border-left-color:#e07b8a;">
         <div class="s-icon">🧑‍⚕️</div>
         <div class="s-name">Patient</div>
-        <div class="s-role" style="color:#c0392b;">End Recipient</div>
+        <div class="s-role" style="color:#e07b8a;">End Recipient</div>
         <div class="s-desc">The person who receives the prescription and ultimately takes the medication. Navigates insurance requirements, copays, and pharmacy logistics.</div>
         <div class="s-examples">May be covered by employer insurance, Medicare, Medicaid, or uninsured</div>
       </div>
 
-      <div class="stakeholder-card" style="border-left-color:#1e6b3a;">
+      <div class="stakeholder-card" style="border-left-color:#6dbb8a;">
         <div class="s-icon">👨‍⚕️</div>
         <div class="s-name">Prescriber</div>
-        <div class="s-role" style="color:#1e6b3a;">Initiates the Rx</div>
+        <div class="s-role" style="color:#6dbb8a;">Initiates the Rx</div>
         <div class="s-desc">Licensed healthcare provider who diagnoses the patient and writes the prescription. Can prescribe paper or electronically (e-Rx).</div>
         <div class="s-examples">MD, DO, NP, PA, Dentist, Psychiatrist, Optometrist (varies by state)</div>
       </div>
 
-      <div class="stakeholder-card" style="border-left-color:#c05c10;">
+      <div class="stakeholder-card" style="border-left-color:#e09a6b;">
         <div class="s-icon">💊</div>
         <div class="s-name">Pharmacy</div>
-        <div class="s-role" style="color:#c05c10;">Dispenses Drug</div>
+        <div class="s-role" style="color:#e09a6b;">Dispenses Drug</div>
         <div class="s-desc">Receives the prescription, verifies it, checks for drug interactions, adjudicates with insurance, and dispenses the medication to the patient.</div>
         <div class="s-examples">Retail (CVS, Walgreens), Mail-order, Specialty, Hospital, Compounding</div>
       </div>
 
-      <div class="stakeholder-card" style="border-left-color:#5b2d8e;">
+      <div class="stakeholder-card" style="border-left-color:#a888c9;">
         <div class="s-icon">🏢</div>
         <div class="s-name">PBM</div>
-        <div class="s-role" style="color:#5b2d8e;">Pharmacy Benefit Manager</div>
+        <div class="s-role" style="color:#a888c9;">Pharmacy Benefit Manager</div>
         <div class="s-desc">Intermediary between insurers and pharmacies. Processes claims, negotiates drug prices, manages drug formularies, and operates mail-order pharmacies.</div>
         <div class="s-examples">CVS Caremark, Express Scripts (Cigna), OptumRx (UnitedHealth)</div>
       </div>
 
-      <div class="stakeholder-card" style="border-left-color:#c0392b;">
+      <div class="stakeholder-card" style="border-left-color:#e07b8a;">
         <div class="s-icon">🏦</div>
         <div class="s-name">Insurer / Payer</div>
-        <div class="s-role" style="color:#c0392b;">Covers Drug Cost</div>
+        <div class="s-role" style="color:#e07b8a;">Covers Drug Cost</div>
         <div class="s-desc">Pays the majority of covered drug costs. Sets formularies (covered drug lists), requires prior authorizations, and manages cost-sharing with patients.</div>
         <div class="s-examples">Blue Cross, Aetna, United, Cigna, Medicare Part D, Medicaid</div>
       </div>
 
-      <div class="stakeholder-card" style="border-left-color:#1a4a7a;">
+      <div class="stakeholder-card" style="border-left-color:#6b9fd4;">
         <div class="s-icon">🚚</div>
         <div class="s-name">Wholesaler / Distributor</div>
-        <div class="s-role" style="color:#1a4a7a;">Middle of Supply Chain</div>
+        <div class="s-role" style="color:#6b9fd4;">Middle of Supply Chain</div>
         <div class="s-desc">Buys drugs from manufacturers in bulk and distributes to pharmacies and hospitals. The "invisible" logistics layer that keeps pharmacies stocked.</div>
         <div class="s-examples">McKesson, AmerisourceBergen (Cencora), Cardinal Health (the "Big 3")</div>
       </div>
 
-      <div class="stakeholder-card" style="border-left-color:#1e6b3a;">
+      <div class="stakeholder-card" style="border-left-color:#6dbb8a;">
         <div class="s-icon">🏭</div>
         <div class="s-name">Drug Manufacturer</div>
-        <div class="s-role" style="color:#1e6b3a;">Produces the Drug</div>
+        <div class="s-role" style="color:#6dbb8a;">Produces the Drug</div>
         <div class="s-desc">Researches, develops, and manufactures drugs. Sets the list (wholesale) price. May offer patient assistance programs or manufacturer coupons.</div>
         <div class="s-examples">Pfizer, Eli Lilly, AbbVie (branded); Teva, Mylan (generic)</div>
       </div>
 
-      <div class="stakeholder-card" style="border-left-color:#b5860d;">
+      <div class="stakeholder-card" style="border-left-color:#c9a96e;">
         <div class="s-icon">⚖️</div>
         <div class="s-name">FDA</div>
-        <div class="s-role" style="color:#b5860d;">Federal Regulator</div>
+        <div class="s-role" style="color:#c9a96e;">Federal Regulator</div>
         <div class="s-desc">Approves drugs for safety and efficacy before they reach the market. Regulates labeling, manufacturing standards, and post-market surveillance.</div>
         <div class="s-examples">Reviews NDAs (new drugs), ANDAs (generics), and BLAs (biologics)</div>
       </div>
 
-      <div class="stakeholder-card" style="border-left-color:#1a6b6b;">
+      <div class="stakeholder-card" style="border-left-color:#6bbfbf;">
         <div class="s-icon">🏗️</div>
         <div class="s-name">GPO</div>
-        <div class="s-role" style="color:#1a6b6b;">Group Purchasing Org</div>
+        <div class="s-role" style="color:#6bbfbf;">Group Purchasing Org</div>
         <div class="s-desc">Negotiates bulk drug prices on behalf of hospitals and health systems. Helps hospitals get better pricing than they could achieve individually.</div>
         <div class="s-examples">Premier, Vizient, HealthTrust (HPG)</div>
       </div>
 
-      <div class="stakeholder-card" style="border-left-color:#c0392b;">
+      <div class="stakeholder-card" style="border-left-color:#e07b8a;">
         <div class="s-icon">📋</div>
         <div class="s-name">Prior Authorization Team</div>
-        <div class="s-role" style="color:#c0392b;">Approval Gate</div>
+        <div class="s-role" style="color:#e07b8a;">Approval Gate</div>
         <div class="s-desc">Clinical reviewers at insurance companies who evaluate whether a drug is medically necessary before approving coverage. Can approve, deny, or request more information.</div>
         <div class="s-examples">Works within the insurer/PBM; may use third-party UM vendors</div>
       </div>
@@ -629,32 +631,32 @@
     <p class="section-sub">Select a path to see every step, who's involved, and what happens at each stage. Click any step for more detail.</p>
 
     <div class="path-selector">
-      <button class="path-btn" style="--accent-color:#1a4a7a;--accent-bg:#f0f4f8;" onclick="showPath(0,this)">
+      <button class="path-btn" style="--accent-color:#6b9fd4;--accent-bg:#edf4fb;" onclick="showPath(0,this)">
         <div class="path-emoji">🏪</div>
         <div class="path-title">Standard Retail</div>
         <div class="path-meta">7 steps · Most common</div>
       </button>
-      <button class="path-btn" style="--accent-color:#c0392b;--accent-bg:#fdf5f5;" onclick="showPath(1,this)">
+      <button class="path-btn" style="--accent-color:#e07b8a;--accent-bg:#fdeef0;" onclick="showPath(1,this)">
         <div class="path-emoji">📋</div>
         <div class="path-title">Prior Authorization</div>
         <div class="path-meta">8 steps · Often delayed</div>
       </button>
-      <button class="path-btn" style="--accent-color:#5b2d8e;--accent-bg:#f8f4fc;" onclick="showPath(2,this)">
+      <button class="path-btn" style="--accent-color:#a888c9;--accent-bg:#f5f0fc;" onclick="showPath(2,this)">
         <div class="path-emoji">📬</div>
         <div class="path-title">Mail-Order</div>
         <div class="path-meta">5 steps · Chronic meds</div>
       </button>
-      <button class="path-btn" style="--accent-color:#1a6b6b;--accent-bg:#f0f8f8;" onclick="showPath(3,this)">
+      <button class="path-btn" style="--accent-color:#6bbfbf;--accent-bg:#eef8f8;" onclick="showPath(3,this)">
         <div class="path-emoji">🧬</div>
         <div class="path-title">Specialty Drug</div>
         <div class="path-meta">7 steps · High cost</div>
       </button>
-      <button class="path-btn" style="--accent-color:#1e6b3a;--accent-bg:#f0f8f4;" onclick="showPath(4,this)">
+      <button class="path-btn" style="--accent-color:#6dbb8a;--accent-bg:#eef8f2;" onclick="showPath(4,this)">
         <div class="path-emoji">🏥</div>
         <div class="path-title">Inpatient Hospital</div>
         <div class="path-meta">6 steps · In-hospital</div>
       </button>
-      <button class="path-btn" style="--accent-color:#b5860d;--accent-bg:#fdf8ec;" onclick="showPath(5,this)">
+      <button class="path-btn" style="--accent-color:#c9a96e;--accent-bg:#fdf7ec;" onclick="showPath(5,this)">
         <div class="path-emoji">💵</div>
         <div class="path-title">Cash-Pay / Uninsured</div>
         <div class="path-meta">5 steps · No insurance</div>
@@ -673,74 +675,74 @@
     <p class="section-sub">The financial relationships in the prescription drug system are complex and often opaque. Here's who pays whom — and why.</p>
 
     <div class="money-grid">
-      <div class="money-card" style="border-top-color:#c0392b;">
-        <div class="money-label" style="color:#c0392b;">Patient Cost-Sharing</div>
+      <div class="money-card" style="border-top-color:#e07b8a;">
+        <div class="money-label" style="color:#e07b8a;">Patient Cost-Sharing</div>
         <div class="money-flow-row">
           <span class="money-from">Patient</span>
-          <span class="money-arrow" style="color:#c0392b;">→</span>
+          <span class="money-arrow" style="color:#e07b8a;">→</span>
           <span class="money-to">Pharmacy</span>
         </div>
         <div class="money-desc">Patient pays a copay, coinsurance, or the full cash price at the counter. Copays range from $0 to hundreds of dollars depending on the drug tier.</div>
       </div>
-      <div class="money-card" style="border-top-color:#1a4a7a;">
-        <div class="money-label" style="color:#1a4a7a;">Insurance Reimbursement</div>
+      <div class="money-card" style="border-top-color:#6b9fd4;">
+        <div class="money-label" style="color:#6b9fd4;">Insurance Reimbursement</div>
         <div class="money-flow-row">
           <span class="money-from">Insurer (via PBM)</span>
-          <span class="money-arrow" style="color:#1a4a7a;">→</span>
+          <span class="money-arrow" style="color:#6b9fd4;">→</span>
           <span class="money-to">Pharmacy</span>
         </div>
         <div class="money-desc">The insurer pays the pharmacy the contracted reimbursement rate, minus the patient's copay. This is adjudicated in real time at point of sale via the PBM.</div>
       </div>
-      <div class="money-card" style="border-top-color:#5b2d8e;">
-        <div class="money-label" style="color:#5b2d8e;">Premiums & Funding</div>
+      <div class="money-card" style="border-top-color:#a888c9;">
+        <div class="money-label" style="color:#a888c9;">Premiums & Funding</div>
         <div class="money-flow-row">
           <span class="money-from">Employer / Government</span>
-          <span class="money-arrow" style="color:#5b2d8e;">→</span>
+          <span class="money-arrow" style="color:#a888c9;">→</span>
           <span class="money-to">Insurer</span>
         </div>
         <div class="money-desc">Employers pay premiums to fund employee health benefits. The government funds Medicare and Medicaid. This pool of money is what insurers use to pay drug claims.</div>
       </div>
-      <div class="money-card" style="border-top-color:#c05c10;">
-        <div class="money-label" style="color:#c05c10;">Drug Purchase Cost</div>
+      <div class="money-card" style="border-top-color:#e09a6b;">
+        <div class="money-label" style="color:#e09a6b;">Drug Purchase Cost</div>
         <div class="money-flow-row">
           <span class="money-from">Pharmacy</span>
-          <span class="money-arrow" style="color:#c05c10;">→</span>
+          <span class="money-arrow" style="color:#e09a6b;">→</span>
           <span class="money-to">Wholesaler</span>
         </div>
         <div class="money-desc">Pharmacies buy drugs from wholesalers at a negotiated price. Profit margins on drugs are often thin; pharmacies earn more on dispensing fees and front-of-store sales.</div>
       </div>
-      <div class="money-card" style="border-top-color:#1a6b6b;">
-        <div class="money-label" style="color:#1a6b6b;">Wholesale Acquisition Cost (WAC)</div>
+      <div class="money-card" style="border-top-color:#6bbfbf;">
+        <div class="money-label" style="color:#6bbfbf;">Wholesale Acquisition Cost (WAC)</div>
         <div class="money-flow-row">
           <span class="money-from">Wholesaler</span>
-          <span class="money-arrow" style="color:#1a6b6b;">→</span>
+          <span class="money-arrow" style="color:#6bbfbf;">→</span>
           <span class="money-to">Manufacturer</span>
         </div>
         <div class="money-desc">Wholesalers pay manufacturers the WAC (list price minus any contract discounts). The Big 3 wholesalers earn thin margins (~1–2%) but on enormous volume.</div>
       </div>
-      <div class="money-card" style="border-top-color:#1e6b3a;">
-        <div class="money-label" style="color:#1e6b3a;">Manufacturer Rebates</div>
+      <div class="money-card" style="border-top-color:#6dbb8a;">
+        <div class="money-label" style="color:#6dbb8a;">Manufacturer Rebates</div>
         <div class="money-flow-row">
           <span class="money-from">Manufacturer</span>
-          <span class="money-arrow" style="color:#1e6b3a;">→</span>
+          <span class="money-arrow" style="color:#6dbb8a;">→</span>
           <span class="money-to">PBM / Insurer</span>
         </div>
         <div class="money-desc">Manufacturers pay rebates to PBMs in exchange for favorable formulary placement. These rebates can be 20–50% of list price. A key driver of high list prices.</div>
       </div>
-      <div class="money-card" style="border-top-color:#b5860d;">
-        <div class="money-label" style="color:#b5860d;">PBM Administrative Fees</div>
+      <div class="money-card" style="border-top-color:#c9a96e;">
+        <div class="money-label" style="color:#c9a96e;">PBM Administrative Fees</div>
         <div class="money-flow-row">
           <span class="money-from">Insurer</span>
-          <span class="money-arrow" style="color:#b5860d;">→</span>
+          <span class="money-arrow" style="color:#c9a96e;">→</span>
           <span class="money-to">PBM</span>
         </div>
         <div class="money-desc">Insurers pay PBMs a per-member-per-month administrative fee to manage their pharmacy benefit. PBMs also profit by keeping a portion of manufacturer rebates.</div>
       </div>
-      <div class="money-card" style="border-top-color:#c0392b;">
-        <div class="money-label" style="color:#c0392b;">340B Drug Pricing</div>
+      <div class="money-card" style="border-top-color:#e07b8a;">
+        <div class="money-label" style="color:#e07b8a;">340B Drug Pricing</div>
         <div class="money-flow-row">
           <span class="money-from">Manufacturer</span>
-          <span class="money-arrow" style="color:#c0392b;">→</span>
+          <span class="money-arrow" style="color:#e07b8a;">→</span>
           <span class="money-to">Safety-Net Hospitals</span>
         </div>
         <div class="money-desc">Qualifying hospitals (serving low-income patients) can buy drugs at heavily discounted 340B prices — sometimes 25–50% below WAC. A major source of hospital revenue.</div>
@@ -748,8 +750,8 @@
     </div>
 
     <hr class="divider">
-    <div style="background:white;border:1px solid var(--line);border-radius:4px;padding:24px;border-left:4px solid #c0392b;">
-      <div style="font-weight:700;font-size:16px;margin-bottom:10px;color:#c0392b;">⚠️ Why Drug Prices Are So High</div>
+    <div style="background:white;border:1px solid var(--line);border-radius:4px;padding:24px;border-left:4px solid #e07b8a;">
+      <div style="font-weight:700;font-size:16px;margin-bottom:10px;color:#e07b8a;">⚠️ Why Drug Prices Are So High</div>
       <div style="font-size:14px;color:var(--ink2);line-height:1.7;">
         The US drug pricing system creates a paradox: manufacturers set artificially <strong>high list prices</strong> to give room for rebates to PBMs. PBMs prefer high-rebate drugs, which incentivizes manufacturers to raise prices further. Patients who pay coinsurance (a % of list price) or are uninsured get hit hardest — they pay based on the inflated list price, not the net price after rebates. The Inflation Reduction Act (2022) began allowing Medicare to negotiate certain drug prices directly for the first time.
       </div>
@@ -843,77 +845,77 @@
 <script>
   const paths = [
     {
-      id: "standard", title: "Standard Retail Path", emoji: "🏪", color: "#1a4a7a",
+      id: "standard", title: "Standard Retail Path", emoji: "🏪", color: "#6b9fd4",
       desc: "The most common prescription path in the US. Works for most insured patients filling generic or preferred brand-name drugs.",
       steps: [
-        { actor: "👨‍⚕️ Prescriber", color: "#1e6b3a", action: "Diagnoses patient & writes prescription", detail: "The prescriber evaluates the patient, selects an appropriate drug, and issues a prescription — either on paper or electronically (e-Rx). E-prescribing is now mandatory in many states for controlled substances and preferred for all drugs." },
-        { actor: "🧑‍⚕️ Patient", color: "#c0392b", action: "Brings Rx to retail pharmacy (or e-Rx sent directly)", detail: "If paper, the patient carries the Rx to a pharmacy of their choice. If e-Rx, the prescription arrives at the pharmacy automatically, and the patient just shows up. Chains like CVS and Walgreens are most common." },
-        { actor: "💊 Pharmacy", color: "#c05c10", action: "Pharmacist verifies Rx & checks for drug interactions", detail: "The pharmacist checks the prescription for authenticity, appropriate dosing, and potential interactions with other drugs the patient takes. A technician enters it into the pharmacy system." },
-        { actor: "🏢 PBM", color: "#5b2d8e", action: "Pharmacy submits claim electronically to PBM", detail: "The pharmacy sends a real-time claim to the patient's PBM (e.g., CVS Caremark, Express Scripts). This adjudication happens in seconds and determines coverage, patient cost-share, and reimbursement amount." },
-        { actor: "🏦 Insurer / PBM", color: "#c0392b", action: "PBM checks formulary, coverage & deductibles", detail: "The PBM verifies the drug is on the formulary, checks the patient's deductible status, and calculates the copay or coinsurance. If the drug isn't covered, the pharmacy is notified immediately." },
-        { actor: "💊 Pharmacy", color: "#c05c10", action: "Drug dispensed; patient pays copay at counter", detail: "The pharmacist fills the prescription and the patient pays their copay (e.g., $10 for a generic Tier 1 drug). The insurer reimburses the pharmacy for the remaining drug cost via the PBM." },
-        { actor: "🧑‍⚕️ Patient", color: "#c0392b", action: "Takes medication home", detail: "The patient receives a labeled prescription bottle, a medication guide, and counseling from the pharmacist. For new prescriptions, pharmacists are required to offer counseling under OBRA '90." },
+        { actor: "👨‍⚕️ Prescriber", color: "#6dbb8a", action: "Diagnoses patient & writes prescription", detail: "The prescriber evaluates the patient, selects an appropriate drug, and issues a prescription — either on paper or electronically (e-Rx). E-prescribing is now mandatory in many states for controlled substances and preferred for all drugs." },
+        { actor: "🧑‍⚕️ Patient", color: "#e07b8a", action: "Brings Rx to retail pharmacy (or e-Rx sent directly)", detail: "If paper, the patient carries the Rx to a pharmacy of their choice. If e-Rx, the prescription arrives at the pharmacy automatically, and the patient just shows up. Chains like CVS and Walgreens are most common." },
+        { actor: "💊 Pharmacy", color: "#e09a6b", action: "Pharmacist verifies Rx & checks for drug interactions", detail: "The pharmacist checks the prescription for authenticity, appropriate dosing, and potential interactions with other drugs the patient takes. A technician enters it into the pharmacy system." },
+        { actor: "🏢 PBM", color: "#a888c9", action: "Pharmacy submits claim electronically to PBM", detail: "The pharmacy sends a real-time claim to the patient's PBM (e.g., CVS Caremark, Express Scripts). This adjudication happens in seconds and determines coverage, patient cost-share, and reimbursement amount." },
+        { actor: "🏦 Insurer / PBM", color: "#e07b8a", action: "PBM checks formulary, coverage & deductibles", detail: "The PBM verifies the drug is on the formulary, checks the patient's deductible status, and calculates the copay or coinsurance. If the drug isn't covered, the pharmacy is notified immediately." },
+        { actor: "💊 Pharmacy", color: "#e09a6b", action: "Drug dispensed; patient pays copay at counter", detail: "The pharmacist fills the prescription and the patient pays their copay (e.g., $10 for a generic Tier 1 drug). The insurer reimburses the pharmacy for the remaining drug cost via the PBM." },
+        { actor: "🧑‍⚕️ Patient", color: "#e07b8a", action: "Takes medication home", detail: "The patient receives a labeled prescription bottle, a medication guide, and counseling from the pharmacist. For new prescriptions, pharmacists are required to offer counseling under OBRA '90." },
       ]
     },
     {
-      id: "prior_auth", title: "Prior Authorization Path", emoji: "📋", color: "#c0392b",
+      id: "prior_auth", title: "Prior Authorization Path", emoji: "📋", color: "#e07b8a",
       desc: "Required when an insurer wants to confirm a drug is medically necessary before covering it. Common for expensive, specialty, or non-preferred drugs.",
       steps: [
-        { actor: "👨‍⚕️ Prescriber", color: "#1e6b3a", action: "Prescribes a specialty or non-preferred drug", detail: "The doctor determines the patient needs a specific drug — perhaps a newer branded medication or a specialty biologic. This drug may not be on the patient's formulary or may require justification." },
-        { actor: "💊 Pharmacy", color: "#c05c10", action: "Submits claim — gets rejected with 'PA Required'", detail: "The pharmacy submits the claim to the PBM and receives a rejection code indicating a prior authorization is needed. The pharmacist notifies the patient and the prescriber's office." },
-        { actor: "👨‍⚕️ Prescriber", color: "#1e6b3a", action: "Prescriber's office initiates the PA request", detail: "The prescriber's staff submits a PA request to the insurer, including clinical documentation: diagnosis codes, medical history, why the requested drug is necessary, and why alternatives have failed or are not appropriate." },
-        { actor: "🏦 Insurer", color: "#c0392b", action: "Insurer reviews medical necessity (days to weeks)", detail: "A clinical reviewer (nurse or physician) at the insurance company evaluates the request against clinical criteria. Standard PA decisions are due within 3 business days; urgent requests within 24 hours (though delays are common)." },
+        { actor: "👨‍⚕️ Prescriber", color: "#6dbb8a", action: "Prescribes a specialty or non-preferred drug", detail: "The doctor determines the patient needs a specific drug — perhaps a newer branded medication or a specialty biologic. This drug may not be on the patient's formulary or may require justification." },
+        { actor: "💊 Pharmacy", color: "#e09a6b", action: "Submits claim — gets rejected with 'PA Required'", detail: "The pharmacy submits the claim to the PBM and receives a rejection code indicating a prior authorization is needed. The pharmacist notifies the patient and the prescriber's office." },
+        { actor: "👨‍⚕️ Prescriber", color: "#6dbb8a", action: "Prescriber's office initiates the PA request", detail: "The prescriber's staff submits a PA request to the insurer, including clinical documentation: diagnosis codes, medical history, why the requested drug is necessary, and why alternatives have failed or are not appropriate." },
+        { actor: "🏦 Insurer", color: "#e07b8a", action: "Insurer reviews medical necessity (days to weeks)", detail: "A clinical reviewer (nurse or physician) at the insurance company evaluates the request against clinical criteria. Standard PA decisions are due within 3 business days; urgent requests within 24 hours (though delays are common)." },
         { actor: "📋 PA Decision", color: "#8a7f75", action: "Decision: Approved ✅, Denied ❌, or Peer-to-Peer Review requested", detail: "If approved: pharmacy is notified and prescription proceeds. If denied: prescriber can request a peer-to-peer review (doctor speaks directly with insurer's physician) or file a formal appeal. Patients can also appeal independently." },
-        { actor: "👨‍⚕️ Prescriber (if denied)", color: "#1e6b3a", action: "May appeal or prescribe an alternative drug", detail: "If the PA is denied, the prescriber can appeal, request an exception, or switch to an alternative drug that is covered. The appeals process can take additional weeks." },
-        { actor: "💊 Pharmacy", color: "#c05c10", action: "Prescription filled once PA is approved", detail: "After approval, the pharmacy receives an override code and can fill the prescription. The process from initial rejection to dispensing can take anywhere from 1 day to several weeks." },
-        { actor: "🧑‍⚕️ Patient", color: "#c0392b", action: "Receives medication — often significantly delayed", detail: "The patient finally receives their medication. Studies show PA delays lead to medication abandonment in ~25% of cases, and can result in serious patient harm for time-sensitive conditions." },
+        { actor: "👨‍⚕️ Prescriber (if denied)", color: "#6dbb8a", action: "May appeal or prescribe an alternative drug", detail: "If the PA is denied, the prescriber can appeal, request an exception, or switch to an alternative drug that is covered. The appeals process can take additional weeks." },
+        { actor: "💊 Pharmacy", color: "#e09a6b", action: "Prescription filled once PA is approved", detail: "After approval, the pharmacy receives an override code and can fill the prescription. The process from initial rejection to dispensing can take anywhere from 1 day to several weeks." },
+        { actor: "🧑‍⚕️ Patient", color: "#e07b8a", action: "Receives medication — often significantly delayed", detail: "The patient finally receives their medication. Studies show PA delays lead to medication abandonment in ~25% of cases, and can result in serious patient harm for time-sensitive conditions." },
       ]
     },
     {
-      id: "mailorder", title: "Mail-Order Pharmacy Path", emoji: "📬", color: "#5b2d8e",
+      id: "mailorder", title: "Mail-Order Pharmacy Path", emoji: "📬", color: "#a888c9",
       desc: "Best for maintenance medications taken regularly for chronic conditions. Often cheaper for patients and required by some insurance plans for long-term drugs.",
       steps: [
-        { actor: "👨‍⚕️ Prescriber", color: "#1e6b3a", action: "Sends a 90-day supply e-Rx to mail-order pharmacy", detail: "The prescriber writes a 90-day prescription (vs. the standard 30-day) and routes it to a mail-order pharmacy — often owned by the patient's PBM (e.g., CVS Caremark sends to CVS Mail Service). Some insurers mandate mail-order for maintenance drugs after the first fill." },
-        { actor: "🏢 PBM Mail Pharmacy", color: "#5b2d8e", action: "Receives Rx and adjudicates insurance in-house", detail: "Since PBMs often own their mail-order pharmacies (vertical integration), the adjudication happens internally. This eliminates the back-and-forth of the retail process and typically results in lower costs for both the insurer and patient." },
-        { actor: "🚚 Wholesaler", color: "#1a4a7a", action: "Drug sourced from central warehouse distribution", detail: "Mail-order pharmacies operate large centralized fulfillment centers (e.g., in Texas or Ohio) that order drugs from wholesalers in bulk. Automation handles much of the filling process, with pharmacist oversight." },
-        { actor: "💊 Mail Pharmacy", color: "#c05c10", action: "Pharmacist reviews order; drug packaged & shipped", detail: "A licensed pharmacist reviews every order before it ships. The drug is packaged with temperature controls if needed, labeled, and shipped via USPS or courier. Tracking is provided to the patient." },
-        { actor: "🧑‍⚕️ Patient", color: "#c0392b", action: "Receives 90-day supply by mail within 2–7 days", detail: "The patient receives their medication at home, typically at a lower copay than 3 individual 30-day fills at retail. The 90-day supply reduces the frequency of refills. Many plans offer automatic refills for enrolled patients." },
+        { actor: "👨‍⚕️ Prescriber", color: "#6dbb8a", action: "Sends a 90-day supply e-Rx to mail-order pharmacy", detail: "The prescriber writes a 90-day prescription (vs. the standard 30-day) and routes it to a mail-order pharmacy — often owned by the patient's PBM (e.g., CVS Caremark sends to CVS Mail Service). Some insurers mandate mail-order for maintenance drugs after the first fill." },
+        { actor: "🏢 PBM Mail Pharmacy", color: "#a888c9", action: "Receives Rx and adjudicates insurance in-house", detail: "Since PBMs often own their mail-order pharmacies (vertical integration), the adjudication happens internally. This eliminates the back-and-forth of the retail process and typically results in lower costs for both the insurer and patient." },
+        { actor: "🚚 Wholesaler", color: "#6b9fd4", action: "Drug sourced from central warehouse distribution", detail: "Mail-order pharmacies operate large centralized fulfillment centers (e.g., in Texas or Ohio) that order drugs from wholesalers in bulk. Automation handles much of the filling process, with pharmacist oversight." },
+        { actor: "💊 Mail Pharmacy", color: "#e09a6b", action: "Pharmacist reviews order; drug packaged & shipped", detail: "A licensed pharmacist reviews every order before it ships. The drug is packaged with temperature controls if needed, labeled, and shipped via USPS or courier. Tracking is provided to the patient." },
+        { actor: "🧑‍⚕️ Patient", color: "#e07b8a", action: "Receives 90-day supply by mail within 2–7 days", detail: "The patient receives their medication at home, typically at a lower copay than 3 individual 30-day fills at retail. The 90-day supply reduces the frequency of refills. Many plans offer automatic refills for enrolled patients." },
       ]
     },
     {
-      id: "specialty", title: "Specialty Drug Path", emoji: "🧬", color: "#1a6b6b",
+      id: "specialty", title: "Specialty Drug Path", emoji: "🧬", color: "#6bbfbf",
       desc: "For high-cost, complex drugs (biologics, infusibles, injectables) that require special handling, storage, and patient monitoring. Often $10,000+ per month.",
       steps: [
-        { actor: "👨‍⚕️ Prescriber (Specialist)", color: "#1e6b3a", action: "Prescribes a specialty drug (e.g., biologic, infusible)", detail: "Typically prescribed by a specialist (rheumatologist, oncologist, neurologist). Examples include adalimumab (Humira) for rheumatoid arthritis, pembrolizumab (Keytruda) for cancer, or ocrelizumab (Ocrevus) for MS." },
-        { actor: "📋 Prior Authorization", color: "#c0392b", action: "Prior authorization almost always required", detail: "Nearly all specialty drugs require PA. Insurers scrutinize these given their cost ($10,000–$500,000+ per year). Criteria often include confirmed diagnosis, failure of step-therapy drugs, and specific lab values." },
-        { actor: "🏦 Insurer", color: "#c0392b", action: "May require step therapy or additional criteria", detail: "For biologics especially, insurers often require patients to try a conventional (cheaper) therapy first. For example, a patient may need to fail methotrexate before a biologic for RA is approved." },
-        { actor: "💊 Specialty Pharmacy", color: "#c05c10", action: "Designated specialty pharmacy enrolled for distribution", detail: "The prescriber sends the Rx to a specialty pharmacy that has been accredited (URAC, ACHC) and trained for that specific drug. Some drugs have 'limited distribution' — only 1–5 pharmacies nationally can dispense them." },
-        { actor: "🏭 Manufacturer", color: "#1e6b3a", action: "May ship directly to pharmacy or patient (hub model)", detail: "For limited-distribution drugs, the manufacturer operates a 'hub' that coordinates PA, specialty pharmacy, patient enrollment, and financial assistance all in one place. The drug may ship directly from the manufacturer." },
-        { actor: "💊 Specialty Pharmacist", color: "#c05c10", action: "Specialty pharmacist counsels patient before dispensing", detail: "Unlike retail, specialty pharmacists conduct detailed consultations: how to inject, side effect monitoring, storage requirements (many require refrigeration), adherence support, and coordination with the patient's clinical team." },
-        { actor: "🧑‍⚕️ Patient", color: "#c0392b", action: "Receives drug with ongoing clinical support program", detail: "The patient receives the drug along with enrollment in a manufacturer-sponsored support program (e.g., AbbVie's myAbbVie Assist). These programs provide financial assistance, nurse hotlines, and adherence support." },
+        { actor: "👨‍⚕️ Prescriber (Specialist)", color: "#6dbb8a", action: "Prescribes a specialty drug (e.g., biologic, infusible)", detail: "Typically prescribed by a specialist (rheumatologist, oncologist, neurologist). Examples include adalimumab (Humira) for rheumatoid arthritis, pembrolizumab (Keytruda) for cancer, or ocrelizumab (Ocrevus) for MS." },
+        { actor: "📋 Prior Authorization", color: "#e07b8a", action: "Prior authorization almost always required", detail: "Nearly all specialty drugs require PA. Insurers scrutinize these given their cost ($10,000–$500,000+ per year). Criteria often include confirmed diagnosis, failure of step-therapy drugs, and specific lab values." },
+        { actor: "🏦 Insurer", color: "#e07b8a", action: "May require step therapy or additional criteria", detail: "For biologics especially, insurers often require patients to try a conventional (cheaper) therapy first. For example, a patient may need to fail methotrexate before a biologic for RA is approved." },
+        { actor: "💊 Specialty Pharmacy", color: "#e09a6b", action: "Designated specialty pharmacy enrolled for distribution", detail: "The prescriber sends the Rx to a specialty pharmacy that has been accredited (URAC, ACHC) and trained for that specific drug. Some drugs have 'limited distribution' — only 1–5 pharmacies nationally can dispense them." },
+        { actor: "🏭 Manufacturer", color: "#6dbb8a", action: "May ship directly to pharmacy or patient (hub model)", detail: "For limited-distribution drugs, the manufacturer operates a 'hub' that coordinates PA, specialty pharmacy, patient enrollment, and financial assistance all in one place. The drug may ship directly from the manufacturer." },
+        { actor: "💊 Specialty Pharmacist", color: "#e09a6b", action: "Specialty pharmacist counsels patient before dispensing", detail: "Unlike retail, specialty pharmacists conduct detailed consultations: how to inject, side effect monitoring, storage requirements (many require refrigeration), adherence support, and coordination with the patient's clinical team." },
+        { actor: "🧑‍⚕️ Patient", color: "#e07b8a", action: "Receives drug with ongoing clinical support program", detail: "The patient receives the drug along with enrollment in a manufacturer-sponsored support program (e.g., AbbVie's myAbbVie Assist). These programs provide financial assistance, nurse hotlines, and adherence support." },
       ]
     },
     {
-      id: "hospital", title: "Inpatient Hospital Path", emoji: "🏥", color: "#1e6b3a",
+      id: "hospital", title: "Inpatient Hospital Path", emoji: "🏥", color: "#6dbb8a",
       desc: "For patients admitted to the hospital. Drug ordering, dispensing, and billing are entirely different from outpatient prescriptions.",
       steps: [
-        { actor: "👨‍⚕️ Physician / Hospitalist", color: "#1e6b3a", action: "Orders drug in hospital EHR (CPOE)", detail: "The physician uses a Computerized Provider Order Entry (CPOE) system within the hospital's EHR (Epic, Cerner, etc.). Clinical decision support tools flag drug interactions, allergies, and dosing errors in real time." },
-        { actor: "💊 Hospital Pharmacist", color: "#c05c10", action: "Pharmacist reviews order and fills from hospital formulary", detail: "Hospital pharmacists review every order for safety. Hospitals have their own formularies — often more restricted than outpatient — and substitute therapeutically equivalent drugs when appropriate. The pharmacy prepares the dose and sends it to the floor." },
-        { actor: "🚚 Wholesaler / GPO", color: "#1a4a7a", action: "Hospital procures drugs via GPO contracts", detail: "Hospitals purchase drugs through Group Purchasing Organizations (GPOs) like Premier or Vizient, which negotiate bulk discounts with manufacturers. The hospital's pharmacy holds inventory sourced from the Big 3 wholesalers." },
-        { actor: "🏭 Manufacturer", color: "#1e6b3a", action: "Fulfills hospital orders through wholesaler", detail: "The manufacturer ships to the wholesaler, which delivers to the hospital. For 340B-eligible hospitals, the manufacturer must sell at a steep discount. Shortages can disrupt this supply chain significantly." },
-        { actor: "🧑‍⚕️ Patient / Nurse", color: "#c0392b", action: "Nurse administers drug at bedside", detail: "A nurse administers the drug to the patient — orally, intravenously, intramuscularly, or topically depending on the formulation. Bar-code medication administration (BCMA) is used in most hospitals to prevent errors." },
-        { actor: "🏦 Insurer / Medicare", color: "#c0392b", action: "Hospital bills insurer as part of DRG or procedure cost", detail: "Unlike outpatient, inpatient drug costs are NOT billed separately to the patient. They're bundled into the DRG payment (a fixed amount per diagnosis). The insurer pays the hospital a lump sum; the hospital absorbs drug costs within that." },
+        { actor: "👨‍⚕️ Physician / Hospitalist", color: "#6dbb8a", action: "Orders drug in hospital EHR (CPOE)", detail: "The physician uses a Computerized Provider Order Entry (CPOE) system within the hospital's EHR (Epic, Cerner, etc.). Clinical decision support tools flag drug interactions, allergies, and dosing errors in real time." },
+        { actor: "💊 Hospital Pharmacist", color: "#e09a6b", action: "Pharmacist reviews order and fills from hospital formulary", detail: "Hospital pharmacists review every order for safety. Hospitals have their own formularies — often more restricted than outpatient — and substitute therapeutically equivalent drugs when appropriate. The pharmacy prepares the dose and sends it to the floor." },
+        { actor: "🚚 Wholesaler / GPO", color: "#6b9fd4", action: "Hospital procures drugs via GPO contracts", detail: "Hospitals purchase drugs through Group Purchasing Organizations (GPOs) like Premier or Vizient, which negotiate bulk discounts with manufacturers. The hospital's pharmacy holds inventory sourced from the Big 3 wholesalers." },
+        { actor: "🏭 Manufacturer", color: "#6dbb8a", action: "Fulfills hospital orders through wholesaler", detail: "The manufacturer ships to the wholesaler, which delivers to the hospital. For 340B-eligible hospitals, the manufacturer must sell at a steep discount. Shortages can disrupt this supply chain significantly." },
+        { actor: "🧑‍⚕️ Patient / Nurse", color: "#e07b8a", action: "Nurse administers drug at bedside", detail: "A nurse administers the drug to the patient — orally, intravenously, intramuscularly, or topically depending on the formulation. Bar-code medication administration (BCMA) is used in most hospitals to prevent errors." },
+        { actor: "🏦 Insurer / Medicare", color: "#e07b8a", action: "Hospital bills insurer as part of DRG or procedure cost", detail: "Unlike outpatient, inpatient drug costs are NOT billed separately to the patient. They're bundled into the DRG payment (a fixed amount per diagnosis). The insurer pays the hospital a lump sum; the hospital absorbs drug costs within that." },
       ]
     },
     {
-      id: "cash", title: "Cash-Pay / Uninsured Path", emoji: "💵", color: "#b5860d",
+      id: "cash", title: "Cash-Pay / Uninsured Path", emoji: "💵", color: "#c9a96e",
       desc: "For patients without insurance, or when a drug is cheaper to buy cash than to use insurance (more common than you'd think).",
       steps: [
-        { actor: "👨‍⚕️ Prescriber", color: "#1e6b3a", action: "Prescribes drug; patient has no insurance or opts out", detail: "The prescriber may write the prescription knowing the patient is uninsured, or a patient with insurance may choose to pay cash if the drug is cheaper that way (e.g., a generic drug via GoodRx vs. a high deductible)." },
-        { actor: "🧑‍⚕️ Patient", color: "#c0392b", action: "Shops pharmacies or uses GoodRx / discount card", detail: "The patient can use tools like GoodRx, RxSaver, or NeedyMeds to find the lowest price at nearby pharmacies. GoodRx negotiates rates with PBMs on behalf of uninsured users — these prices can be 80–90% lower than list price." },
-        { actor: "💊 Pharmacy", color: "#c05c10", action: "Charges cash price (with or without discount card)", detail: "Without any discount card, the pharmacy charges the Usual & Customary (U&C) price — often the full list price. With a discount card like GoodRx, the pharmacy runs it through a PBM network at a contracted rate. No insurer is involved." },
-        { actor: "🏭 Manufacturer (optional)", color: "#1e6b3a", action: "Manufacturer may offer Patient Assistance Program (PAP)", detail: "Most major pharmaceutical manufacturers offer PAPs for patients who meet income criteria. Examples: Pfizer RxPathways, Lilly Insulin Value Program ($35/month for insulin). Applications require proof of income and prescription." },
-        { actor: "🧑‍⚕️ Patient", color: "#c0392b", action: "Pays out-of-pocket or receives free/reduced drug via PAP", detail: "The patient either pays the cash/discounted price at the pharmacy, or — if enrolled in a PAP — receives the drug free or at a nominal cost directly from the manufacturer or through a participating pharmacy." },
+        { actor: "👨‍⚕️ Prescriber", color: "#6dbb8a", action: "Prescribes drug; patient has no insurance or opts out", detail: "The prescriber may write the prescription knowing the patient is uninsured, or a patient with insurance may choose to pay cash if the drug is cheaper that way (e.g., a generic drug via GoodRx vs. a high deductible)." },
+        { actor: "🧑‍⚕️ Patient", color: "#e07b8a", action: "Shops pharmacies or uses GoodRx / discount card", detail: "The patient can use tools like GoodRx, RxSaver, or NeedyMeds to find the lowest price at nearby pharmacies. GoodRx negotiates rates with PBMs on behalf of uninsured users — these prices can be 80–90% lower than list price." },
+        { actor: "💊 Pharmacy", color: "#e09a6b", action: "Charges cash price (with or without discount card)", detail: "Without any discount card, the pharmacy charges the Usual & Customary (U&C) price — often the full list price. With a discount card like GoodRx, the pharmacy runs it through a PBM network at a contracted rate. No insurer is involved." },
+        { actor: "🏭 Manufacturer (optional)", color: "#6dbb8a", action: "Manufacturer may offer Patient Assistance Program (PAP)", detail: "Most major pharmaceutical manufacturers offer PAPs for patients who meet income criteria. Examples: Pfizer RxPathways, Lilly Insulin Value Program ($35/month for insulin). Applications require proof of income and prescription." },
+        { actor: "🧑‍⚕️ Patient", color: "#e07b8a", action: "Pays out-of-pocket or receives free/reduced drug via PAP", detail: "The patient either pays the cash/discounted price at the pharmacy, or — if enrolled in a PAP — receives the drug free or at a nominal cost directly from the manufacturer or through a participating pharmacy." },
       ]
     },
   ];
